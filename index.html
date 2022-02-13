@@ -9,9 +9,12 @@
 </head>
 <body>
     <header>
-       <a href="#highscore">View High Scores</a> 
+       <a href="#highscore">View High Scores</a>
+       <div class="countdown-container">
+           <span id="timer">Time: 75</span>
+       </div> 
     </header>
-    <div class="quiz-container">
+    <section class="quiz-container">
         <div class="challenge-header">
             <h1><strong>Coding Quiz Challenge</strong></h1>
         </div>
@@ -22,10 +25,20 @@
             </p>
         </div>
         <div class="start">
-            <button id="start-quiz" class="btn">Start Quiz</button>
+            <button id="start-btn" class="btn">Start Quiz</button>
         </div>
-    </div>
-    
-    <scipt src="./assets/js/script.js"></scipt>
+    </section>
+    <section id="question-section" style="display: none;">
+        <h2 id="question"></h2>
+            <div id="answer-buttons">
+                <button class="btn"></button>
+                <button class="btn"></button>
+                <button class="btn"></button>
+                <button class="btn"></button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
