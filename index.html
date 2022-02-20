@@ -11,10 +11,10 @@
     <header>
        <a href="#highscore">View High Scores</a>
        <div class="countdown-container">
-           <span id="timer">Time: 75</span>
+           <span id="timer">Time: 0</span>
        </div> 
     </header>
-    <section class="quiz-container">
+    <section id="quiz-container" class="show">
         <div class="challenge-header">
             <h1><strong>Coding Quiz Challenge</strong></h1>
         </div>
@@ -25,16 +25,31 @@
             </p>
         </div>
         <div class="start">
-            <button id="start-btn" class="btn">Start Quiz</button>
+            <button id="start-btn" class="start-btn btn">Start Quiz</button>
         </div>
     </section>
-    <section id="question-section" style="display: none;">
-        <h2 id="question"></h2>
-            <div id="answer-buttons">
-                <button class="btn"></button>
-                <button class="btn"></button>
-                <button class="btn"></button>
-                <button class="btn"></button>
+    <section id="question-section" class="hide">
+        <h2 id="questions">Question</h2>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn1">Answer 1</button>
+                <button class="btn2">Answer 2</button>
+                <button class="btn3">Answer 3</button>
+                <button class="btn4">Answer 4</button>
+            </div>
+            <div class="row">
+                <div id="choices"></div>
+                <div id="feedback"></div>
+            </div>
+            <div id="feedback"></div>
+    </section>
+    <section id="highscore-section" class="hide">
+        <div class="row">
+            <div id="high-score">
+                <h2>All done!</h2>
+                <h3>Your final score is <span id="final-score">0</span></h3>
+                <label for="initials-area">Enter initials:</label>
+                <input type="text" name="initials-area" maxlength="4" id="initials">
+                <button id="submit-button" type="submit">Submit</button>
             </div>
         </div>
     </section>
