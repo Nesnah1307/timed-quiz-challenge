@@ -7,4 +7,4 @@ After starting the quiz, a 75 second timer will start. If you answer any of the 
 
 ![Screenshot (12)](https://user-images.githubusercontent.com/96394025/154870939-60822f33-d7bd-426c-a8ba-85eee2150a5c.png)
 
-
+https://nesnah1307.github.io/timed-quiz-challenge/
