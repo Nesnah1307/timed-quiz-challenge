@@ -3,7 +3,7 @@
     padding: 0;
     
 }
-body {
+body, .two {
     font-family: 'Open Sans', sans-serif;
 }
 #quiz-container {
@@ -76,7 +76,7 @@ header a:link {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 20px;
-    margin: 20px 0;
+    margin: 20px 40px;
 }
 .choice {
     background-color: rgba(50, 13, 80, 0.835);
@@ -92,4 +92,31 @@ header a:link {
     font-size: 25px;
     color: rgba(50, 13, 80, 0.835);
 }
-
+.leaderboard {
+    display: flex;
+    justify-content: center;
+    color: rgba(50, 13, 80, 0.835);
+    font-size: 36px;
+}
+.leaderboard th {
+    text-decoration: underline;
+    padding-bottom: 25px;
+    animation: mymove 3s infinite;
+}
+.high-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.return {
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(50, 13, 80, 0.835);
+    color: #fff;
+    margin: 16px 16px 16px 20px;
+    padding: 14px 34px;
+    line-height: 24px;
+    font-size: 24px;
+    cursor: pointer;
+}
